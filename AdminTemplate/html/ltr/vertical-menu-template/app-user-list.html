@@ -190,7 +190,7 @@
   <!-- list section start -->
   <div class="card">
     <div class="card-datatable table-responsive pt-0">
-      <table class="user-list-table table">
+      <!-- <table class="user-list-table table">
         <thead class="table-light">
           <tr>
             <th></th>
@@ -202,7 +202,100 @@
             <th>Actions</th>
           </tr>
         </thead>
-      </table>
+      </table> -->
+
+      <div class="card-datatable table-responsive" style="padding: 20px;">
+        <div style="padding: 10px 10px 0px 0px; position: absolute;">
+          <div class="search-input-icon">
+            <input class="form-control input" type="text" placeholder="Search..." tabindex="-1" data-search="search">
+            <button type="button" name="search" class="button-search" data-feather="search"></button>
+            <ul class="search-list search-list-main"></ul>
+          </div>
+          <ul class="search-list search-list-main"></ul>
+        </div>
+        <div class="form-group-compose text-center compose-btn" style="padding: 10px 10px 0px 0px; float:right;">
+          <a href="app-product-edit.html">
+          <button type="button" class="compose-email btn btn-primary w-100 text-truncate">
+            Add New User
+          </button>
+        </a>
+        </div>
+    </div>
+
+        <table class="table">
+          <thead class="table-light">
+            <tr>
+              <tr>
+                <th>User</th>
+                <th>Id</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Status</th>
+                <th>Plan</th>
+                <th>Options</th>
+                <th>Lock</th>
+              </tr>
+            </tr>
+            <tr>
+              <td>nguyen van</td>
+              <td>1</td>
+              <td>nguyenvan@gmail.com</td>
+              <td>User</td>
+              <td>Blocked</td>
+              <td>Team</td>
+              <td>
+                <div class=" d-flex align-items-center">
+                  <ul class="nav navbar-nav list-status">
+                    <li class="nav-item">
+                      <a class="nav-link" href="app-user-edit.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="View">
+                        <i class="ficon list-status" data-feather="eye" style="margin-right: 10px;"></i>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete">
+                        <i class="ficon list-status" data-feather="trash-2"></i>
+                      </a>
+                    </li>
+                  </ul>
+              </td>
+              <td>
+                <div class="form-check form-check-primary form-switch">
+                  <input type="checkbox" class="form-check-input" checked/>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>nguyen van</td>
+              <td>1</td>
+              <td>nguyenvan@gmail.com</td>
+              <td>User</td>
+              <td>Blocked</td>
+              <td>Team</td>
+              <td>
+                <div class=" d-flex align-items-center">
+                  <ul class="nav navbar-nav list-status">
+                    <li class="nav-item">
+                      <a class="nav-link" href="app-product-edit.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="View">
+                        <i class="ficon list-status" data-feather="eye" style="margin-right: 10px;"></i>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete">
+                        <i class="ficon list-status" data-feather="trash-2"></i>
+                      </a>
+                    </li>
+                  </ul>
+              </td>
+              <td>
+                <div class="form-check form-check-primary form-switch">
+                  <input type="checkbox" class="form-check-input" checked/>
+                </div>
+              </td>
+            </tr>
+          </thead>
+        </table>
+
+      
     </div>
     <!-- Modal to add new user starts-->
     <div class="modal modal-slide-in new-user-modal fade" id="modals-slide-in">
