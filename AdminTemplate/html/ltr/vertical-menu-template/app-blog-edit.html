@@ -187,7 +187,7 @@
         <!-- Product Tab starts -->
         <div class="tab-pane active" id="product" aria-labelledby="product-tab" role="tabpanel">
           <!-- users edit start -->
-          <div class="d-flex mb-4"style="float:right; padding-bottom: 50px;">
+          <div class="mb-4"style="float:right; padding-bottom: 50px;">
             <img
               src="../../../app-assets/images/avatars/bakingsoda.jpg"
               alt="product avatar"
@@ -224,60 +224,14 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="mb-1">
-                  <label class="form-label" for="productname">Product Name</label>
+                  <label class="form-label" for="foodName">Food Name</label>
                   <input
                     type="text"
                     class="form-control"
-                    placeholder="Product Name"
-                    name="productname"
-                    id="productname"
+                    placeholder="Food Name"
+                    name="foodName"
+                    id="foodaName"
                   />
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="mb-1">
-                  <label class="form-label" for="price">Price</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Price"
-                    name="price"
-                    id="price"
-                  />
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="mb-1">
-                  <label class="form-label" for="quantity">Quantity</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Quantity"
-                    name="quantity"
-                    id="quantity"
-                  />
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="mb-1">
-                  <label class="form-label" for="category">Category</label>
-                  <select class="form-select" id="category">
-                    <option>Category #1</option>
-                    <option>Category #2</option>
-                    <option>Category #3</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="mb-1">
-                  <label class="form-label" for="dateOfManufacture">Date Of Manufacture</label>
-                  <input type="date" id="dateOfManufacture" class="form-control flatpickr-basic" onchange="mydate();"/>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="mb-1">
-                  <label class="form-label" for="expirationDate">Expiration Date</label>
-                  <input type="date" id="expirationDate" class="form-control flatpickr-basic" onchange="mydate();"/>
                 </div>
               </div>
               <div class="col-md-12">
@@ -292,12 +246,220 @@
                   ></textarea>
                 </div>
               </div>
-
-              <div class="col-12 d-flex flex-sm-row flex-column mt-2">
-                <button type="submit" class="btn btn-primary mb-1 mb-sm-0 me-0 me-sm-1">Save Changes</button>
-                <button type="reset" class="btn btn-outline-secondary">Reset</button>
+              <div class="col-md-12">
+                <div class="mb-1">
+                  <label class="form-label" for="price">Ration</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Ration"
+                    name="ration"
+                    id="ration"
+                  />
+                </div>
               </div>
-            </div>
+              <div class="col-md-12">
+                <div class="mb-1">
+                  <label class="form-label" for="TTK">Time To Cook</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Time To Cook"
+                    name="TTK"
+                    id="TTK"
+                  />
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="mb-1">
+                  <label class="form-label" for="category">Ingredients</label>
+                  <div>
+                    <ul id="ingreadients" style="list-style: none;">
+                      <li>
+                        <div class="col-bg-8 col-md-8 col-sm-8 d-flex">
+                          <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Ingredients #"
+                          name="ingredients"
+                          id="ingredients"
+                          />
+                          <button type="button" name="delete" data-feather='trash-2' class="button-search" style="margin: 10px -20px 0px 0px; "></button>
+                        </div>
+                      </li><br>
+                      <li>
+                        <div class="col-bg-8 col-md-8 col-sm-8 d-flex">
+                          <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Ingredients #"
+                          name="ingredients"
+                          id="ingredients"
+                          />
+                          <button type="button" name="delete" data-feather='trash-2' class="button-search" style="margin: 10px -20px 0px 0px;"></button>
+                        </div>
+                      </li><br>
+                      <li>
+                        <div class="col-bg-8 col-md-8 col-sm-8 d-flex">
+                          <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Ingredients #"
+                          name="ingredients"
+                          id="ingredients"
+                          />
+                          <button type="button" name="delete" data-feather='trash-2' class="button-search" style="margin: 10px -20px 0px 0px; "></button>
+                        </div>
+                      </li><br>
+                      <li>
+                        <div class="col-bg-8 col-md-8 col-sm-8 d-flex">
+                          <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Ingredients #"
+                          name="ingredients"
+                          id="ingredients"
+                          />
+                          <button type="button" name="delete" data-feather='trash-2' class="button-search" style="margin: 10px -20px 0px 0px; "></button>
+                        </div>
+                      </li><br>
+                      <div class="">
+                        <div class="d-flex mt-1 px-0">
+                          <label class="btn btn-primary" for="change-picture">
+                            <span class="d-none d-sm-block">Add New Ingredients</span>
+                            <span class="d-block d-sm-none">
+                              <i class="me-0" data-feather="plus"></i>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                </div><br>
+                <div class="col-md-12">
+                  <div class="mb-1">
+                    <label class="form-label" for="category">Making</label>
+                    <div>
+                      <ul id="making" style="list-style: none;">
+                        <li>
+                          <p class="text-truncate"><i data-feather="circle"></i> Step 1</p>
+                          <div class="col-bg-8 col-md-8 col-sm-8 d-flex">
+                            <input
+                            type="text"
+                            class="form-control"
+                            name="step"
+                            id="step"
+                            />
+                            <button type="button" name="delete" data-feather='trash-2' class="button-search" style="margin: 10px -20px 0px 0px; "></button>
+                          </div>
+                          <div class="tab-pane active" id="step" aria-labelledby="step-tab" role="tabpanel">
+                            <img
+                            src="../../../app-assets/images/avatars/bakingsoda.jpg"
+                            alt="step avatar"
+                            class="user-avatar users-avatar-shadow rounded me-2 my-25 cursor-pointer"
+                            height="150"
+                            width="150"
+                            />
+                            <div class="d-flex">
+                              <label class="btn btn-primary me-75 mb-0" for="change-picture">
+                                <span class="d-none d-sm-block">Upload Image</span>
+                                <input
+                                class="form-control"
+                                type="file"
+                                id="change-picture-step"
+                                hidden
+                                accept="image/png, image/jpeg, image/jpg"
+                                />
+                                <span class="d-block d-sm-none">
+                                  <i class="me-0" data-feather="upload"></i>
+                                </span>
+                              </label>
+                            </div>
+                        </div>
+                        </li><br>
+                        <li>
+                          <p class="text-truncate"><i data-feather="circle"></i> Step 2</p>
+                          <div class="col-bg-8 col-md-8 col-sm-8 d-flex">
+                            <input
+                            type="text"
+                            class="form-control"
+                            name="step"
+                            id="step"
+                            />
+                            <button type="button" name="delete" data-feather='trash-2' class="button-search" style="margin: 10px -20px 0px 0px; "></button>
+                          </div>
+                          <div class="tab-pane active" id="step" aria-labelledby="step-tab" role="tabpanel">
+                            <img
+                            src="../../../app-assets/images/avatars/bakingsoda.jpg"
+                            alt="step avatar"
+                            class="user-avatar users-avatar-shadow rounded me-2 my-25 cursor-pointer"
+                            height="150"
+                            width="150"
+                            />
+                            <div class="d-flex">
+                              <label class="btn btn-primary me-75 mb-0" for="change-picture">
+                                <span class="d-none d-sm-block">Upload Image</span>
+                                <input
+                                class="form-control"
+                                type="file"
+                                id="change-picture-step"
+                                hidden
+                                accept="image/png, image/jpeg, image/jpg"
+                                />
+                                <span class="d-block d-sm-none">
+                                  <i class="me-0" data-feather="upload"></i>
+                                </span>
+                              </label>
+                            </div>
+                        </div>
+                        </li><br>
+                        <li>
+                          <p class="text-truncate"><i data-feather="circle"></i> Step 3</p>
+                          <div class="col-bg-8 col-md-8 col-sm-8 d-flex">
+                            <input
+                            type="text"
+                            class="form-control"
+                            name="step"
+                            id="step"
+                            />
+                            <button type="button" name="delete" data-feather='trash-2' class="button-search" style="margin: 10px -20px 0px 0px; "></button>
+                          </div>
+                          <div class="tab-pane active" id="step" aria-labelledby="step-tab" role="tabpanel">
+                            <img
+                            src="../../../app-assets/images/avatars/bakingsoda.jpg"
+                            alt="step avatar"
+                            class="user-avatar users-avatar-shadow rounded me-2 my-25 cursor-pointer"
+                            height="150"
+                            width="150"
+                            />
+                            <div class="d-flex">
+                              <label class="btn btn-primary me-75 mb-0" for="change-picture">
+                                <span class="d-none d-sm-block">Upload Image</span>
+                                <input
+                                class="form-control"
+                                type="file"
+                                id="change-picture-step"
+                                hidden
+                                accept="image/png, image/jpeg, image/jpg"
+                                />
+                                <span class="d-block d-sm-none">
+                                  <i class="me-0" data-feather="upload"></i>
+                                </span>
+                              </label>
+                            </div>
+                        </div>
+                        </li><br>
+                        <div class="d-flex mt-1 px-0">
+                          <label class="btn btn-primary" for="change-picture">
+                            <span class="d-none d-sm-block">Add New Step</span>
+                            <span class="d-block d-sm-none">
+                              <i class="me-0" data-feather="plus"></i>
+                            </span>
+                          </label>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
           </form>
           <!-- users edit account form ends -->
         </div>
