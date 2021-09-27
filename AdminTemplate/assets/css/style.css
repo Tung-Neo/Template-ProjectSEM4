@@ -13,3 +13,42 @@
   height: 20px;
   margin: -10px 0px 0px 0px;
 }
+
+.img-circle{
+  border-radius: 50%;
+  display:block;transition: all .3s ease;
+  vertical-align: middle;
+}
+.img-circle:hover{
+  vertical-align: middle;
+  width: 260px;
+  height: 260px;
+}
+
+.avt-us-border{
+  border: 2px solid;
+  height: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  width: 90%;
+  min-width: 350px;
+}
+
+.icon-us{
+  width: 25px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+.name-block{
+  margin-top: 20px;
+  width: 250px;
+  text-align: center;;
+}
+.icon-block{
+  position: absolute;
+  margin-top: -300px;
+  margin-left: 250px;
+  list-style-type: none !important;
+}
