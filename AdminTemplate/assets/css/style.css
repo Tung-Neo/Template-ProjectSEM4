@@ -52,3 +52,11 @@
   margin-left: 250px;
   list-style-type: none !important;
 }
+
+.logo-drinks {
+  height: 100%;
+}
+
+.logo-drinks path {
+  fill: #7367F0;
+}
